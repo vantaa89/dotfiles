@@ -1,0 +1,4 @@
+PATH="$PATH:/opt/homebrew/anaconda3/bin"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+PATH="$PATH:/Users/seojune/.cargo/bin"
+alias python=python3
