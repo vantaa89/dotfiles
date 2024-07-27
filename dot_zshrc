@@ -131,3 +131,6 @@ unset __conda_setup
 source /Users/seojune/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /Users/seojune/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 plugins=(zsh-syntax-highlighting zsh-autosuggestions)
+
+alias g++="/opt/homebrew/bin/g++-14"
+alias gcc="/opt/homebrew/bin/gcc-14"
