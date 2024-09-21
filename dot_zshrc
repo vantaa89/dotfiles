@@ -132,8 +132,8 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # oh-my-zsh
-source /Users/seojune/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/seojune/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 plugins=(zsh-syntax-highlighting zsh-autosuggestions)
 
 # Use gcc/g++ instead of clang
@@ -141,3 +141,7 @@ alias g++="/opt/homebrew/bin/g++-14"
 alias gcc="/opt/homebrew/bin/gcc-14"
 
 export JAVA_HOME="/usr/bin/java"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+PATH="$PATH:/snap/bin"
