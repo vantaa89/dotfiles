@@ -136,9 +136,12 @@ source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 plugins=(zsh-syntax-highlighting zsh-autosuggestions)
 
-# Use gcc/g++ instead of clang
-alias g++="/opt/homebrew/bin/g++-14"
-alias gcc="/opt/homebrew/bin/gcc-14"
+# Do not redirect gcc/g++ to clang (on mac)
+
+if alias gcc 2>/dev/null | grep -q "clang"; then
+	alias g++="/opt/homebrew/bin/g++-14"
+	alias gcc="/opt/homebrew/bin/gcc-14"
+fi
 
 export JAVA_HOME="/usr/bin/java"
 
