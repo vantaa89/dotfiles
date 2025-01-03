@@ -1,4 +1,6 @@
-PATH="$PATH:/opt/homebrew/anaconda3/bin"
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -d /opt/homebrew/ ]; then
+	PATH="$PATH:/opt/homebrew/anaconda3/bin"
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 PATH="$PATH:/Users/seojune/.cargo/bin"
 alias python=python3
