@@ -34,7 +34,6 @@ set encoding=utf-8
 set nu              "Line 출력
 set tabstop=4       "<Tab> key 4칸 이동
 set shiftwidth=4    "들여쓰기 이슈시 2 로 바꿀것 
-set cursorline      "현재 줄 강조
 
 "-------------------------------------------- vim 기본 설정 끝
 
