@@ -148,3 +148,5 @@ export JAVA_HOME="/usr/bin/java"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 PATH="$PATH:/snap/bin"
+
+eval "$(zoxide init zsh)"
